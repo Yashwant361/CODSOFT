@@ -22,7 +22,6 @@ public class NumberGame {
         while (true){
             System.out.println("Round " + round);
             int targetNumber = random.nextInt(maxRange - minRange + 1) + minRange;
-
             int attempts = 0;
             int roundScore = maxAttempts;
 
@@ -41,9 +40,9 @@ public class NumberGame {
                 break;
 
             } else if (userGuess < targetNumber) {
-                System.out.println(" Your guess is too low");
+                System.out.println("Opss! Your guess was too LOW, try some higher numbers.");
             } else {
-                System.out.println("Your guess is too high");
+                System.out.println("Opss! Your guess was too HIGH, try some lower numbers.");
             }
 
             // If attempts are exhausted, display the correct number
